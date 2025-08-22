@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Clase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Segunda Clase</h1>
+    <h2>Formulario de Post a la Página del itam</h2>
+    <form method="post" target="_blank" autocomplete="off" action="https://sts.itam.mx/adfs/ls?version=1.0&action=signin&realm=urn:AppProxy:com&appRealm=d2c44c54-cf77-eb11-80df-00155da51130&returnUrl=https://comunidad.itam.mx/&client-request-id=284B223B-05CF-0003-DC79-5F29CF05DC01">
+        <fieldset>
+            <legend>Formulario de Contacto</legend>
+            <label for="clave">Correo Institucional:</label>
+            <input type="email" id="emailEstudiante" name="UserName" required><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseñaUsuario" name="Password" required><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Formulario de Get a la Página de Google</h2>
+    <form method="get" target="_blank" autocomplete="off" action="https://www.google.com/">
+        <fieldset>
+            <legend>Formulario de Busqueda</legend>
+            <label for="Busqueda">Introduce lo que deseas buscar:</label>
+            <input type="text" id="inputBusqueda" name="q" required><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
