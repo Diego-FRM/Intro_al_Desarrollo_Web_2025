@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigación Múltiple</title>
+</head>
+<body>
+  <header>
+    <h1>Tarea: Investigación Múltiple</h1>
+    <h3>Diego Federico Romero Miravete</h3>
+  </header>
+  <main>
+    <!-- Diferencias entre etiquetas semánticas y visuales -->
+    <section>
+      <h2>1. Diferencias entre etiquetas semánticas y visuales</h2>
+        <h3><b>b</b> vs. <strong>strong</strong></h3>
+        <p>
+          <b>La etiqueta b</b> se utiliza para resaltar texto en negritas de manera visual sin añadir significado semántico.  
+          Por otro lado,<strong> la etiqueta strong</strong> indica importancia o énfasis fuerte, lo cual es reconocido por motores de búsqueda y lectores de pantalla.
+        </p>
+
+        <h3><i>i</i> vs. <em>em</em></h3>
+        <p>
+          <i>La etiqueta i</i> aplica cursiva solo con fines visuales, como para nombres o palabras extranjeras.  
+          En cambio, <em></em>la etiqueta em</em> marca un énfasis en el contenido, lo cual mejora la accesibilidad y semántica para buscadores.
+        </p>
+
+        <h3><s>s</s> vs. <del>del</del></h3>
+        <p>
+          <s>La etiqueta s</s> representa texto tachado, sin dar un significado semántico.  
+          <del>La etiqueta del</del> indica que el texto ha sido eliminado, con un sentido semántico que puede ser interpretado por buscadores y sistemas de control de cambios.
+        </p>
+    </section>
+
+    <!-- Elementos de línea y de bloque -->
+    <section>
+      <h2>2. Elementos de línea y de bloque</h2>
+        <h3>¿Qué significa que un elemento sea de línea?</h3>
+        <p>
+            No inicia nueva línea cuando se crea, ocupa solo el espacio de su contenido.
+        </p>
+        <p>
+            Ejemplos:
+        </p>
+        <ul>
+          <li>span</li>
+          <li>a</li>
+          <li>img</li>
+          <li>strong</li>
+          <li>em</li>
+        </ul>
+
+        <h3>¿Qué significa que un elemento sea de bloque?</h3>
+        <p>
+            Empieza en una línea nueva y ocupa por defecto todo el ancho disponible.
+        </p>
+        <p>
+            Ejemplos:
+        </p>
+        <ul>
+          <li>div</li>
+          <li>p</li>
+          <li>h1 a h6</li>
+          <li>ul y ol</li>
+          <li>section</li>
+        </ul>
+    </section>
+
+    <!-- Formularios y tipos de campos -->
+    <section>
+      <h2>3. Formularios y tipos de campos</h2>
+      <form>
+        <!-- input con diferentes tipos -->
+        <fieldset>
+          <legend>Ejemplos de input</legend>
+          <label>Texto: <input type="text" name="texto"></label><br>
+          <label>Email: <input type="email" name="correo"></label><br>
+          <label>Contraseña: <input type="password" name="clave"></label><br>
+          <label>Número: <input type="number" name="numero"></label><br>
+          <label>Fecha: <input type="date" name="fecha"></label><br>
+          <label>Archivo: <input type="file" name="archivo"></label><br>
+          <label>Color: <input type="color" name="color"></label><br>
+        </fieldset>
+
+        <!-- label -->
+        <fieldset>
+          <legend>Ejemplo de label</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre">
+        </fieldset>
+
+        <!-- output -->
+        <fieldset>
+          <legend>Ejemplo de output</legend>
+          <label for="a">Número A:</label>
+          <input type="number" id="a" name="a" value="5" oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+          <label for="b">Número B:</label>
+          <input type="number" id="b" name="b" value="10" oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+          <br>
+          Resultado: <output name="resultado" for="a b">15</output>
+        </fieldset>
+
+        <!-- progress -->
+        <fieldset>
+          <legend>Ejemplo de progress</legend>
+          <label for="progreso">Progreso:</label>
+          <progress id="progreso" value="60" max="100"></progress>
+        </fieldset>
+
+        <!-- select y option -->
+        <fieldset>
+          <legend>Ejemplo de select y option</legend>
+          <label for="pais">Selecciona tu país:</label>
+          <select id="pais" name="pais">
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <option value="es">España</option>
+            <option value="us">Estados Unidos</option>
+          </select>
+        </fieldset>
+
+        <!-- textarea -->
+        <fieldset>
+          <legend>Ejemplo de textarea</legend>
+          <label for="comentario">Comentario:</label><br>
+          <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
