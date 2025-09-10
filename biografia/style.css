@@ -1,0 +1,130 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #6db6ff;
+    color: #1f2937;
+}
+h1 { 
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+h2 { 
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+h3 { 
+    font-size: 1.2rem; 
+    margin: 0.75rem 0;
+}
+p  { 
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+.contenedor {
+    width: min(1000px, 90%);
+    margin: 0 auto;
+}
+.header {
+    background: #4e83ff;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.nav a:hover {
+    background: #33c5ff;
+    color: #fff;
+    text-decoration: underline;
+}
+.area_principal { 
+    padding: 1.25rem 0rgb(117, 209, 255)m;
+    background-color: #bed1ff;
+}
+.personaje {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+.img__class {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #2563eb;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+}
+.tarjeta { background: #fff;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    margin-top: 1rem;
+}
+.subrayado {
+    text-decoration: underline;
+}
+.centrado {
+    text-align: center;
+}
+#destacado {
+    background: #f0f9ff;
+    border: 2px dotted #0ea5e9;
+    box-shadow: 0 6px 20px rgba(14,165,233,.25);
+}
+.form {
+    display: grid;
+    gap: .75rem;
+    margin-top: .5rem;
+}
+.input {
+    padding: .6rem;
+    border: 2px solid #94a3b8;
+    border-radius: .75rem;
+}
+.btn {
+    background: #2563eb;
+    color: #fff;
+    padding: .6rem 1rem;
+    border-color: #2563eb;
+    border-radius: 900px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #1d4ed8;
+}
+.footer { background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+@media (max-width: 700px) {
+  .main-area{
+    background: #ff2b05;
+  }
+  .hero{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  .main-area {
+    background: #40ff11;
+  }
+}

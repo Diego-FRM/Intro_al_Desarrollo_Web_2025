@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biografía de Alan Turing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="div_header">
+      <h1>Biografía de Alan Turing</h1>
+      <nav class="nav">
+        <h2>Enlaces para obtener más Información</h2>
+        <ul>
+          <li><a href="https://es.wikipedia.org/wiki/Alan_Turing" target="_blank">Información de wikipedia</a></li>
+          <li><a href="https://www.cultura.gob.ar/alan-turing-el-padre-de-la-inteligencia-artificial-9162/" target="_blank">Secretaria de la cultura</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="area_principal">
+    <div class="contenedor">
+      <section class="tarjeta">
+        <div class="personaje">
+          <div>
+            <h2>El padre de la computación moderna</h2>
+            <p>
+              <span class="subrayado">Alan Mathison Turing</span> (1912–1954) fue un matemático, lógico, criptógrafo y pionero de la informática.  
+              Su trabajo permitió descifrar los códigos nazis durante la Segunda Guerra Mundial y sentó las bases de la inteligencia artificial.
+            </p>
+          </div>
+          <img class="img__class" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Alan_turing_header.jpg?20250201165322" alt="Retrato de Alan Turing" />
+        </div>
+      </section>
+
+      <section id="bio" class="tarjeta">
+        <article id="destacado">
+          <h2>Biografía breve</h2>
+          <p>
+            Nació en Londres en 1912. Desde pequeño mostró una enorme capacidad para las matemáticas.  
+            Estudió en la Universidad de Cambridge y posteriormente en Princeton.  
+            Durante la Segunda Guerra Mundial trabajó en Bletchley Park, donde desarrolló técnicas para descifrar el código Enigma.
+          </p>
+          <h3>Hechos relevantes</h3>
+          <ol>
+            <li>1936: Define la “Máquina de Turing”, modelo teórico de la computación.</li>
+            <li>1939–1945: Descifra mensajes alemanes en Bletchley Park.</li>
+            <li>1950: Publica el artículo “Computing Machinery and Intelligence”.</li>
+          </ol>
+        </article>
+
+        <article class="tarjeta">
+          <img class="img__class hide-on-small" src="https://www.cultura.gob.ar/media/uploads/techrepublic.jpg" alt="Máquina Enigma utilizada en la Segunda Guerra Mundial" />
+          <p class="centrado"><small>Máquina Enigma descifrada por Turing y su equipo.</small></p>
+        </article>
+      </section>
+
+      <section id="obra" class="tarjeta">
+        <h2>Obra científica</h2>
+        <article>
+          <h3>Aportaciones</h3>
+          <ul>
+            <li>Máquina de Turing: base de la computación teórica.</li>
+            <li>Trabajo en criptoanálisis durante la guerra.</li>
+            <li>Ideas precursoras de la inteligencia artificial.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="legado" class="tarjeta">
+        <h2>Legado</h2>
+        <p>
+          A pesar de su trágica muerte en 1954, su influencia sigue viva:  
+          la prueba de Turing es un referente en inteligencia artificial y el Premio Turing es considerado el “Nobel” de la informática.
+        </p>
+        <img class="img__class" src="https://ssc.ca/sites/default/files/acm_turing_award.jpg" alt="Imagen del Premio Turing" />
+      </section>
+
+      <section id="contacto" class="tarjeta">
+        <h2>Contacto</h2>
+        <form class="form" action="#" method="post">
+          <div>
+            <label for="nombre">Nombre</label>
+            <input class="input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div>
+            <label for="email">Correo</label>
+            <input class="input" type="email" id="email" name="email" placeholder="tu@correo.com" required />
+          </div>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Sitio educativo sobre Alan Turing.</p>
+    <p>© 2025 — Tarea: Página de biografía de alguna personalidad mundial con HTML y CSS.</p>
+  </footer>
+</body>
+</html>
