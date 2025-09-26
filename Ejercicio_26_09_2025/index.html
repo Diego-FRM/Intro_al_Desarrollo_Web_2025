@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio localStorage</title>
+</head>
+<body>
+  <h1>Formulario localStorage</h1>
+  <p id="mensaje"></p>
+
+  <form>
+    <label for="nombre_usuario">Nombre:</label>
+    <input type="text" id="nombre_usuario" required>
+    <br>
+
+    <label for="edad_usuario">Edad:</label>
+    <input type="number" id="edad_usuario" required>
+    <br>
+
+    <label for="dia_usuario">Día de la semana favorito:</label>
+    <select id="dia_usuario" required>
+      <option value="">Selecciona un día</option>
+      <option value="Lunes">Lunes</option>
+      <option value="Martes">Martes</option>
+      <option value="Miércoles">Miércoles</option>
+      <option value="Jueves">Jueves</option>
+      <option value="Viernes">Viernes</option>
+      <option value="Sábado">Sábado</option>
+      <option value="Domingo">Domingo</option>
+    </select>
+    <br>
+
+    <button type="button"onclick="guardar_en_localStorage(document.getElementById('nombre_usuario').value, document.getElementById('edad_usuario').value, document.getElementById('dia_usuario').value)">
+      Guardar
+    </button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
