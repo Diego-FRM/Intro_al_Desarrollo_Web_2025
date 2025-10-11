@@ -1,0 +1,48 @@
+# Clases en JavaScript — Guía exprés
+
+**Qué son:** molde para crear objetos con **propiedades** (estado) y **métodos** (comportamiento). Azúcar sintáctica sobre **prototipos**.
+
+## Sintaxis mínima
+```js
+class Persona {
+  constructor(nombre){ this.nombre = nombre }   // constructor
+  saludar(){ return `Hola, soy ${this.nombre}` } // instancia
+  static especie(){ return "H. sapiens" }        // estático (clase)
+}
+const p = new Persona("Ada"); // usar siempre `new`
+```
+
+## Piezas clave
+- **constructor**: inicia atributos.
+- **propiedades**: `this.x` o campos públicos.
+- **métodos**: de **instancia** (en prototype) / **estáticos** (`static`).
+- **get/set**: exponen propiedades con lógica.
+- **privados**: `#secreto` (no accesibles fuera).
+```js
+class Caja {
+  #items = []
+  add(x){ this.#items.push(x) }
+  get size(){ return this.#items.length }
+}
+```
+
+## Herencia
+```js
+class Animal { hablar(){ return "..." } }
+class Perro extends Animal {
+  hablar(){ return "¡guau!" }      // override
+}
+```
+
+## Módulos
+```js
+// Libro.js
+export default class Libro {}
+// index.js
+import Libro from "./Libro.js"
+```
+
+## Tips extra
+- `instanceof` para checar herencia (`p instanceof Perro`).
+- Cuidado con `this` en callbacks → `bind` o métodos flecha de clase.
+- No hay sobrecarga real; usa parámetros opcionales/`...args`.
