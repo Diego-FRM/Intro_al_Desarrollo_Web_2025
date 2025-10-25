@@ -4,7 +4,7 @@ async function ObtenArtistaFijo() {
         method: 'GET',
         headers: {
             Authorization: 
-            'Bearer BQC7Og5wmhgv1u1JLZ8CZUV9lon0ySegZVys0XZAQ8an6WVgx5-kAuDrzOPVWH_dW4B6esCwtv3Xyrn5bmIDnf1JbQ7d_hVbtOMmpkeQxa7pg62dHn_ZsyVoxwIMsdIUccpn_z93OFU'
+            'Bearer BQAv_01CF02QD1CEs3-manU78Z3wSISqJjLMhD1U8OKcwRoihFgujXuJ2C9x9J-xaRYJhnVOuOpHq6lZLUUEe1JoQEtTLpAIzTcUoAgeeEJ-Q1phDVuZEWSdm6ogoSfyPqwxSFuduRo'
         },
     };
     
